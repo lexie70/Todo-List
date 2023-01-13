@@ -18,8 +18,8 @@ const Home = () => {
 		setTodo("");
 	 }
 	}
-	function equis(index){
-		let newList= list.filter((item,i)=> {if (index === i ) {
+	function equis(num){
+		let newList= list.filter((item,i)=> {if (num !== i ) {
 			return item}
 		})
 		setList (newList)
@@ -28,9 +28,9 @@ const Home = () => {
 	return (
 		<div>
 			<h1 className="d-flex justify-content-center">todos</h1>
-			<div className="mb-3">
+			<div className="mb-3 tex ">
 				{/*  input */}
-				<input className="form-control" placeholder="What needs to be done?" value={todo}  onChange={(e)=> setTodo (e.target.value)}/>
+				<input className="form-control " placeholder="What needs to be done?" value={todo}  onChange={(e)=> setTodo (e.target.value)}/>
 			</div>
 			<div className="d-flex justify-content-center">
 				<button type="submit" className="btn btn-primary " onClick={submit}>Submit</button>
