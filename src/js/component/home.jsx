@@ -33,7 +33,7 @@ const Home = () => {
 				<input className="form-control " placeholder="What needs to be done?" value={todo}  onChange={(e)=> setTodo (e.target.value)}/>
 			</div>
 			<div className="d-flex justify-content-center">
-				<button type="submit" className="btn btn-primary " onClick={submit}>Submit.</button>
+				<button type="submit" className="btn btn-primary " onClick={submit}>Submit</button>
 			</div>
 			{/* div contiene funcion map que hace que se muestre la lista del array que el usuario introduce */}
 			<div className="container text-center">
